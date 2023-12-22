@@ -21,7 +21,7 @@ Clone the project
 Enter the project directory
 
 ```bash
-  cd Challenge-Spotify
+  cd Spotify-Challenge
 ```
 
 Install dependencies
