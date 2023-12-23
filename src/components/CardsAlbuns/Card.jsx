@@ -1,6 +1,6 @@
 function Card({ Infos }) {
     if (!Infos || !Infos.albums || !Infos.albums.items) {
-        return <div>Dados de álbuns indisponíveis</div>;
+        return ;
     }
 
     const albums = Infos.albums.items;
