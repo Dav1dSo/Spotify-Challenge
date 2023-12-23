@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 const NoResultWrap = styled.div`
-    width: 80vw;
     margin: auto;
+    width: 80vw;
     padding: 2%;
 `
 const NoResult = styled.h2`
@@ -13,21 +13,36 @@ const NoResult = styled.h2`
 const ContainerAlbuns = styled.div`
     width: 80vw;
     display: flex;
-    flex-direction: row;
-`
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center; 
+
+    div {
+        margin: auto;
+    }
+
+    p {
+        width: 70%;
+        color: #c0bebe;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        text-align: center; 
+        margin: auto; 
+        /* margin-bottom: 2vh; */
+}`
 
 const CardAlbum = styled.div`
-    margin: 10px;
+    width: 15vw;    
+    padding: 4%;
 `
 
 const AlbumImagem = styled.img`
-    width: 13vw;
     height: 25vh;
-`
-const AlbumName = styled.h3`
-    margin: 4%;
-    color: #c0bebe;
-    text-align: center;
+    display: block;  
+    margin: auto;  
+    margin-bottom: 2vh;
 `
 
-export {NoResultWrap, NoResult, ContainerAlbuns,AlbumImagem, AlbumName, CardAlbum};
+export {NoResultWrap, NoResult, ContainerAlbuns, AlbumImagem, CardAlbum };  

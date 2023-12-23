@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
 const Home = styled.div`
-    height: 100vh;
-    background-color: #161616;
 `
 
 const Imagem = styled.img`

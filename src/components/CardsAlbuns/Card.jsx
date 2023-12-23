@@ -1,6 +1,5 @@
 import {
   AlbumImagem,
-  AlbumName,
   CardAlbum,
   ContainerAlbuns,
   NoResult,
@@ -28,7 +27,7 @@ function Card({ Infos }) {
               album.data.coverArt.sources.length > 0 && (
                 <AlbumImagem src={album.data.coverArt.sources[0].url} alt="" />
               )}
-            <AlbumName>{album.data.name}</AlbumName>
+                <p>{album.data.name}</p>
           </CardAlbum>
         </div>
       ))}
